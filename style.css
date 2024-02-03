@@ -1,16 +1,67 @@
+@import './themes.css';
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-.nav-bar{
-    border: 2px solid red;
-  
-    display: flex;
-    justify-content:space-around;
-   align-items: center;
-   font-family: ;
+body{
+    background-color: var( --orange-dark);
 }
 
+.nav-bar {
+    /* border: 2px solid red; */
+  margin: 40px auto;
+    display: flex;
+    justify-content:space-evenly;
+   align-items: center;
+   /* gap: 8px; */
+   white-space: nowrap;
+}
+
+.nav-bar a{
+
+    font-family: var(--ff-yeon);
+   font-size: var( --fs-lg);
+   border: 2px solid black;
+   padding: 10px;
+   border-radius: 10px;
+   background-color: cadetblue;
+text-decoration: none;
+color: black;
+}
+.nav-bar a:hover{
+    cursor: pointer;
+    background-color: bisque;
+    
+}
+
+.img{
+margin:200px auto;
+    /* border: 2px solid red; */
+   /* padding: 100px; */
+   width: 400px;
+   height: 100%;
+   /* text-align: center; */
+  border-radius: 20px;
+}
+
+@media screen and (max-width:760px){
+    .nav-bar {
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    body{
+        background-color: blueviolet;
+    }
+}
+
+@media screen  and (max-width:480px){
+      body{
+background-color: rgb(119, 160, 95);
+      }
+
+    }
 
